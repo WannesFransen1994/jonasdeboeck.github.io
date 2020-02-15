@@ -1,0 +1,136 @@
+html {
+    background-color: #1F4B84;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 10fr 1fr;
+    grid-template-areas:
+    "header main"
+    "header footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #554E4E;
+}
+
+main {
+    grid-area: main;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
+.footer p {
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+nav ul li a:after, nav ul li a:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+nav ul li a:hover:after, nav ul li a:hover:before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+
+nav ul li a:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 100%;
+}
+
+li:nth-of-type(1) {
+    margin-top: 41px;
+}
+
+li {
+    display: block;
+}
+
+#profPic {
+    border-radius: 50%;
+    margin-top: 180px;
+}
+
+p:nth-of-type(1) {
+    margin-top: 56px;
+    margin-bottom: 41.5px;
+    font-size: 45px;
+}
+
+p:nth-of-type(2) {
+    margin-top: 41.5px;
+    font-size: 45px;
+}
+
+hr {
+    width: 416px;
+    background-color: white;
+    border: 1.5px solid white
+}
+
+.social {
+    color: black;
+}
