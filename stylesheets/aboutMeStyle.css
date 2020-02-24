@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+main section article p {
+    font-size: 20px;
+}
+
+main section article {
+    box-shadow: 0 5px 5px rgb(31,75,200);
+    padding: 2%;
+}
