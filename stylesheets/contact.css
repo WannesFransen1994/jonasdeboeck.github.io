@@ -2,6 +2,15 @@ textarea {
     resize: none;
 }
 
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -11,8 +20,30 @@ article {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0 5px 5px rgb(31,75,200);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-input {
-    display: block;
+input, textarea, select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+input, textarea, select:focus {
+    outline: none;
+    border: 1px solid rgb(31,75,200);
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightgray;
 }
