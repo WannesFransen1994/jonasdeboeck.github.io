@@ -27,12 +27,14 @@ function other(evt) {
 
 function checkEmpty(evt) {
     if (evt.target.value === "") {
-        let p = document.createElement("p");
-        p.innerText = "Please Fill out this field";
-        p.style.color = "red";
-        p.id = evt.target.id + "Error";
-        evt.target.parentNode.lastElementChild.style.border = "1px solid red";
-        evt.target.parentNode.insertBefore(p, evt.target.parentNode.lastElementChild);
+        if (document.getElementById(evt.target.id + "Error") == null) {
+            let p = document.createElement("p");
+            p.innerText = "Please Fill out this field";
+            p.style.color = "red";
+            p.id = evt.target.id + "Error";
+            evt.target.parentNode.lastElementChild.style.border = "1px solid red";
+            evt.target.parentNode.insertBefore(p, evt.target.parentNode.lastElementChild);
+        }
     } else {
         evt.target.parentNode.removeChild(document.getElementById(evt.target.id + "Error"));
         evt.target.parentNode.lastElementChild.style.border = "none";
