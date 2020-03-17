@@ -58,7 +58,7 @@
         </header>
     </div>
     <div class="col-10 p-0 m-0" id="content">
-        <div class="h-100 d-flex justify-content-center flex-column ml-2" id="index">
+        <div class="h-100 d-flex justify-content-center flex-column ml-2 div" id="index">
             <h2 class="h1 m-0">Jonas <span class="text-primary">De Boeck</span></h2>
             <p class="h2">Oudestraat 79 &#8226; 1910 Kampenhout &#8226; Belgium &#8226; (+32) 483/01-09-68 &#8226; <span
                     class="text-primary">jonas.deboeck@student.ucll.be</span></p>
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="h-100 d-flex justify-content-center flex-column ml-2" id="about">
+        <div class="h-100 d-flex justify-content-center flex-column ml-2 div" id="about">
             <section>
                 <article>
                     <h2 class="h1 text-primary">
@@ -108,7 +108,7 @@
                 </article>
             </section>
         </div>
-        <div class="h-100 d-flex justify-content-center flex-column ml-2" id="competences">
+        <div class="h-100 d-flex justify-content-center flex-column ml-2 div" id="competences">
             <h2 class="h1 text-primary">Competences & Skills</h2>
             <p class="h3">Programming Languages & Tools</p>
             <ul class="d-flex mt-4">
@@ -129,7 +129,7 @@
                 </li>
             </ul>
         </div>
-        <div class="h-100 d-flex justify-content-center flex-column ml-2" id="CV">
+        <div class="h-100 d-flex justify-content-center flex-column ml-2 div" id="CV">
             <div>
                 <h2 class="h1">
                     Download my <span class="text-primary">English</span> CV
@@ -149,11 +149,54 @@
                 </button>
             </div>
         </div>
-        <div class="h-100 d-flex justify-content-center flex-column ml-2" id="projects">
-            <p>TO DO</p>
+        <div class="h-100 d-flex justify-content-center flex-column ml-2 div" id="projects">
+            <h2 class="h1 text-primary mb-3">
+                Overview of my previous projects
+            </h2>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid" src="images/Taskmanager.png" alt="Project 1: Taskmanager" data-toggle="modal" data-target="#taskmanager">
+                        <div class="carousel-caption d-none d-md-block text-primary">
+                            <h5>Task manager</h5>
+                            <p>Small application written using Spring boot</p>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
 <script src="js/main.js"></script>
+<div class="modal fade pr-0" tabindex="-1" role="dialog" id="taskmanager" aria-labelledby="taskmanager" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Taskmanager</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>It's an application written using the spring boot framework. Where you can add tasks, subtasks watch their details and edit specific tasks.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
