@@ -18,7 +18,6 @@ header {
     grid-area: header;
     height: 100%;
     background-color: #007bff;
-    padding-top: auto;
 }
 
 nav {
@@ -98,4 +97,12 @@ img {
 
 #content {
     margin-right: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
 }
