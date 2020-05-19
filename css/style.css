@@ -106,3 +106,41 @@ img {
 ::-webkit-scrollbar-thumb {
     background: #007bff;
 }
+
+hr {
+    align-self: center;
+}
+
+.competences {
+   margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#competencesButtons {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+}
+
+#competences {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "content table";
+    grid-gap: 5px;
+}
+
+#competence {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#competences:nth-child(1) {
+    grid-area: content;
+}
+
+#competences:nth-child(2) {
+    grid-area: table;
+}
