@@ -47,7 +47,7 @@ nav {
 }
 
 .div {
-    height: 1000px;
+    height: 1100px;
 }
 
 #projectsContainer {
@@ -97,6 +97,7 @@ img {
 
 #content {
     margin-right: 8px;
+    max-width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -116,31 +117,8 @@ hr {
     margin-top: 5px;
 }
 
-#competencesButtons {
+.span {
     display: flex;
-    flex-direction: column;
-    align-self: baseline;
-}
-
-#competences {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: "content table";
-    grid-gap: 5px;
-}
-
-#competence {
-    width: 100%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#competences:nth-child(1) {
-    grid-area: content;
-}
-
-#competences:nth-child(2) {
-    grid-area: table;
 }
