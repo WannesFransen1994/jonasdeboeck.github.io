@@ -210,5 +210,7 @@ hr {
 }
 
 @media only screen and (max-width: 1110px) {
-
+    #about section article {
+        width: 50%;
+    }
 }
