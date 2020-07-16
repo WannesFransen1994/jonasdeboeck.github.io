@@ -36,8 +36,9 @@ nav {
 
 #profielPic {
     border-radius: 50%;
-    width: 15%;
-    max-height: 20%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
     margin-bottom: 20px;
     align-self: center;
 }
@@ -211,6 +212,36 @@ hr {
 
 @media only screen and (max-width: 1110px) {
     #about section article {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #competences div ul {
+        flex-direction: column;
+    }
+
+    #competences div {
+        align-items: center;
+    }
+
+    #CV > div > h2 {
+        font-size: 2rem !important;
+    }
+
+    #CV div {
+        align-items: center;
+    }
+
+    #competences h2, #competences p {
+        width: 50%;
+    }
+
+    #CV {
+        align-items: center;
+    }
+
+    #CV div {
         width: 50%;
     }
 }
